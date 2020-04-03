@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="PostAPIcall">
+		<classes>
+			<class name="com.qa.client.post_api.PostsApiTest01POST" />
+			<class name="com.qa.client.post_api.PostsApiTest02GET" />
+			<class name="com.qa.client.post_api.PostsApiTest03PUT" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="CommentsAPIcall">
+		<classes>
+			<class name="com.qa.client.comments_api.CommentsApiTest01POST" />
+			<class name="com.qa.client.comments_api.CommentsApiTest02GET" />
+			<class name="com.qa.client.comments_api.CommentsApiTest03PUT" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="UserAPIcall">
+		<classes>
+			<class name="com.qa.client.user_api.UserApiTest01POST" />
+			<class name="com.qa.client.user_api.UserApiTest02GET" />
+			<class name="com.qa.client.user_api.UserApiTest03PUT" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
